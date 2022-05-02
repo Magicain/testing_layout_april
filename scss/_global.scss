@@ -1,0 +1,54 @@
+body {
+    font: 1rem/16px 'Lato', sans-serif;
+    background: #fff;
+    color: $dark;
+    margin:0;
+    padding: 0;
+}
+a {
+    color:$white;
+    &:hover,
+    &:active {
+        color: $orange;
+    }
+}
+
+.container {
+    max-width: $bp-d;
+    margin: 0 auto;
+}
+@media (max-width:$bp-d) {
+    .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+}
+.wrapper_all {
+    display: flex;
+    flex-grow: 1;
+}
+.btn {
+    display: block;
+    padding: 2em 5em;
+    background-color: $orange;
+    border-radius: 0.5em;
+}
+.arr-prev::before{
+	content: " ";
+	background: url(/img/arr-prev.svg) no-repeat center;
+	position: relative;
+	display: block;
+	width: 53px;
+	height: 26px;
+	margin-right: 23px;
+    z-index: 10;
+}
+.arr-next:after {
+	content: " ";
+	background: url(/img/arr-next.svg) no-repeat center;
+	position: relative;
+	display: block;
+	width: 92px;
+	height: 26px;
+    z-index: 10;
+}
